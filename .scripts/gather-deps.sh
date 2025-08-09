@@ -9,6 +9,7 @@ DEPS=(
   mandoc man-pages openrc-doc openssh-doc
   incus incus-client incus-vm
   opentofu
+  shellcheck
 )
 
 apk update && apk add --no-cache "${DEPS[@]}" && apk upgrade

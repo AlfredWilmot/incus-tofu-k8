@@ -6,7 +6,7 @@ GATEWAY="192.168.0.1"
 INTERFACE="eth0"
 IPV4_REGEX="[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}" # crude, but good enough
 
-DEFAULT_NET_CONF="$(cat <<EOF
+_DEFAULT_NET_CONF="$(cat <<EOF
 auto lo
 iface lo inet loopback
 
