@@ -4,9 +4,9 @@ set -ex
 DEPS=(
   git curl htop
   netcat-openbsd netcat-openbsd-doc
-  stow vim tmux
+  stow vim tmux openssh-server openssh
   starship fzf
-  mandoc man-pages openrc-doc
+  mandoc man-pages openrc-doc openssh-doc
   incus incus-client incus-vm
   opentofu
 )
