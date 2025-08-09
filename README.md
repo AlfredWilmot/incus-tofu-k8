@@ -8,5 +8,15 @@ using the tools listed above.
 ./setup-host.sh
 ```
 
+- prepare incus:
+```bash
+incus admin init
+```
+
+- prepare tofu:
+```bash
+tofu init
+```
+
 ## References
 - [terraform-provider-incus](https://search.opentofu.org/provider/lxc/incus/latest)
