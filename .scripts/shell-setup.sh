@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
-set -ex
 
+echo "installing bash and configuring it as the login shell"
 apk update && apk upgrade
 apk add --no-cache bash shadow
 

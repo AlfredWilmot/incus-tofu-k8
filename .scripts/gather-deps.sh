@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-set -ex
 
 DEPS=(
   git curl htop
+  podman podman-compose
   netcat-openbsd netcat-openbsd-doc
   stow vim tmux openssh-server openssh
   starship fzf
@@ -12,13 +12,8 @@ DEPS=(
   shellcheck
 )
 
-apk update && apk add --no-cache "${DEPS[@]}" && apk upgrade
-
-# (linuxcontainers.org/incus/docs/main/installing/#linux)
-
 # incus is available via the apk community repository 
+# (linuxcontainers.org/incus/docs/main/installing/#linux)
 sed -i '/\/community$/{s/^ *#//}' /etc/apk/repositories
 
-
-rc-update add incusd
-rc-service incusd start
+apk update && apk add --no-cache "${DEPS[@]}" && apk upgrade
