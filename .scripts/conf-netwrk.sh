@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 
 NET_CONF_FILE="/etc/network/interfaces"
 NETMASK="255.255.255.0"

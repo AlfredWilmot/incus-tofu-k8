@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 
 DEPS=(
   git curl htop
@@ -8,6 +9,7 @@ DEPS=(
   starship fzf
   mandoc man-pages openrc-doc openssh-doc
   incus incus-client incus-vm
+  libvirt-daemon qemu-img qemu-system-x86_64 qemu-modules openrc
   opentofu
   shellcheck
 )

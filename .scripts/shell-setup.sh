@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+set -e
 
 echo "installing bash and configuring it as the login shell"
 apk update && apk upgrade
